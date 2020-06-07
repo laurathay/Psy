@@ -2,11 +2,11 @@ html, body {height:100%;margin:0;}
 span {position:relative;margin-left: 20em;width:100%;text-align:center;background:#fff;}
 a {display:inline-block;vertical-align:top;margin:0 30px;text-decoration:none;font:700 .95em/40px sans-serif;color:#262626;transition:all .4s ease;}
 a:hover {color:#09f;}
-#div1 {height:100%;background:#A30029;}
-#div1+#div2 {background:#235F76;}
-#div1+#div2+#div3 {background:#489660;}
-#div1+#div2+#div3+#div4 {background:#7A7971;}
-#div1+#div2+#div3+#div4+#div5 {background:#6A771F;}
+#div1 {height:100%;background:#e8eff1;}
+#div1+#div2 {background:#ccc6c6;}
+#div1+#div2+#div3 {background:#fbdcd6;}
+#div1+#div2+#div3+#div4 {background:#e5c7b5;}
+#div1+#div2+#div3+#div4+#div5 {background:#bfd7c7;}
 
 
 
@@ -51,10 +51,19 @@ h2{
   margin-left: 20em;
   margin-right: 20em;
   text-align: justify;
+  margin-top: 5em;
+  padding: 5em;
 }
 
-#div1 p{
+#div1 p, #div2 p, #div3 p, #div4 p, #div5 p{
   border: solid grey 1px;
   padding: 2em 2em;
   margin: 2em 2em;
+}
+
+em{
+  font-size: 1.1em;
+  font-weight: 2em;
+  letter-spacing: 0.1em;
+  line-height: 7;
 }
