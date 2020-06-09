@@ -20,11 +20,60 @@ h1{
 /*  padding: 7em;*/ /* a changer en media queries */
   font-family: 'Amiri', serif;
   padding-left:2.4em;
+
 }
 
 h2{
   text-align: center;
   font-family: 'Amiri', serif;
+
+  font-weight: 400;
+    font-style: normal;
+    font-size: 54px;
+    letter-spacing: 0em;
+    line-height: 1.25em;
+}
+
+h3, h4{
+  margin-left: 5em;
+  margin-top: 5em;
+}
+
+p{
+  line-height: 2em;
+}
+/* ---------- partie responsive -----------*/
+#header{
+  max-width: 1500px;
+  width:100%;
+  display:inline-block;
+}
+
+#main{
+  background-image: url(Images/double-moon.jpg);
+  max-width: 1000px;
+  width:100%;
+  margin: 0 auto;
+  min-height: 1000px;
+  height: 100%;
+  position: relative;
+  /*background-color: #c5e9ea;*/
+}
+
+#main h2, #main img{
+  padding: 0 1%;
+}
+
+#main p{
+  padding: O 1%;
+}
+
+
+/* -------------- le reste --------------- */
+
+#div1 button{
+  border-radius: 30%;
+  padding: 1em 1em;
 }
 
 .inline img{
@@ -42,14 +91,19 @@ h2{
 }
 
 
+.inline h3, h4{
+  display: inline-block;
+}
 
-
+.container h3,p{
+  display: inline-block;
+}
 
 
 
 #div1, #div2, #div3, #div4, #div5{
-  margin-left: 20em;
-  margin-right: 20em;
+/*  margin-left: 20em;
+  margin-right: 20em;*/
   text-align: justify;
   margin-top: 5em;
   padding: 5em;
@@ -61,7 +115,11 @@ h2{
   margin: 2em 2em;
 }
 
-em{
+strong{
+  font-size: 28px;
+letter-spacing: .02em;
+line-height: 1.5em;
+
   font-size: 1.1em;
   font-weight: 2em;
   letter-spacing: 0.1em;
