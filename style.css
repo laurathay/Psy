@@ -2,11 +2,11 @@ html, body {height:100%;margin:0;}
 span {position:relative;margin-left: 20em;width:100%;text-align:center;background:#fff;}
 a {display:inline-block;vertical-align:top;margin:0 30px;text-decoration:none;font:700 .95em/40px sans-serif;color:#262626;transition:all .4s ease;}
 a:hover {color:#09f;}
-#div1 {height:100%;background:#e8eff1;}
-#div1+#div2 {background:#ccc6c6;}
-#div1+#div2+#div3 {background:#fbdcd6;}
-#div1+#div2+#div3+#div4 {background:#e5c7b5;}
-#div1+#div2+#div3+#div4+#div5 {background:#bfd7c7;}
+#div1 {/*height:100%;*/background:#e8eff1;}
+#div2 {background:#ccc6c6;}
+#div3 {background:#fbdcd6;}
+#div4 {background:#e5c7b5;}
+#div5 {background:#bfd7c7;}
 
 
 
@@ -41,6 +41,11 @@ h3, h4{
 
 p{
   line-height: 2em;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  color: #333;
+  line-height: 32px;
+  letter-spacing: 0.1px;
 }
 
 label {
@@ -99,9 +104,18 @@ label:hover, input:focus + label {
 
 /* -------------- le reste --------------- */
 
+/* ----------------------------------*/
+/* ---------- bloc premier --------- */
+/* ----------------------------------*/
+
 #div1 button{
   border-radius: 30%;
   padding: 1em 1em;
+}
+
+#div1 .container p{
+  background-image: url("Assets/images/plante.jpg");
+  width:30%;
 }
 
 .inline img{
@@ -152,7 +166,39 @@ line-height: 1.5em;
   font-weight: 2em;
   letter-spacing: 0.1em;
   line-height: 7;
+  margin-left: 18em;
 }
+
+.inline .bloc_premier, .bloc_deuxieme{
+  display: inline-block;
+}
+
+.project_description_cont {
+    position: relative;
+    padding: 25px;
+    opacity: 1;
+    z-index: 5;
+}
+
+.project_title{
+  display: inline;
+  font: normal 17px/30px 'f24e4d5d';
+  border-bottom: 4px solid #fff;
+}
+
+#project {
+    position: absolute;
+    background: #fff;
+    z-index: 4;
+    font-size: small;
+
+    display: block;
+    margin-top: -46em;
+    margin-left: 42em;
+    width: 36%;
+    height: 30em;
+}
+
 
 
 /* _______________________________*/
