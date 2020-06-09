@@ -42,6 +42,34 @@ h3, h4{
 p{
   line-height: 2em;
 }
+
+label {
+  display: inline-block;
+  position: relative;
+  margin: 25px;
+  padding: 35px 140px 35px 140px;
+  border-radius: 30px;
+  color: #060606;
+  background-color: #e2e4e4;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color .2s, box-shadow .2s;
+}
+label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 21px;
+    bottom: 23px;
+    left: 15px;
+    width: 3px;
+    border-radius: 100px;
+    transition: background-color .2s;
+}
+label:hover, input:focus + label {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
 /* ---------- partie responsive -----------*/
 #header{
   max-width: 1500px;
@@ -124,4 +152,15 @@ line-height: 1.5em;
   font-weight: 2em;
   letter-spacing: 0.1em;
   line-height: 7;
+}
+
+
+/* _______________________________*/
+/* ----------- FOOTER ----------*/
+/* _______________________________*/
+
+footer a,p{
+  display: inline-block;
+  margin-left: 8em;
+
 }
