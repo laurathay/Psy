@@ -204,6 +204,28 @@ line-height: 1.5em;
 /* ----------- DIV 2 ----------*/
 /* _______________________________*/
 
+.slide-in em p{
+  display: inline-block;
+  animation-name: slide-in;
+  animation-duration: 10s;
+}
+
+@keyframes slide-in {
+  0%{
+    background: lightskyblue;
+                    -webkit-animation-timing-function: ease-in;
+  }
+  50%{
+    background: lightskyblue;
+                    -webkit-animation-timing-function: ease-in;
+  }
+  100%{
+    background: lightskyblue;
+                    -webkit-animation-timing-function: ease-in;
+  }
+
+}
+
 .sticky{
   position: sticky;
   top:0em;
@@ -221,9 +243,27 @@ line-height: 1.5em;
 /* ----------- DIV 4 ----------*/
 /* _______________________________*/
 
-.carte{
+#div4 p{
+  padding: 0.2em 0.2em!important;
+}
+
+.inline, .inline2, i p{
+  display: inline-block;
+  text-align: center;
+  margin-left: 5em;
+}
+
+#div4 .inline p {
+  padding: 2em 2em;
+}
+
+#div4 .inline i {
+  margin-left: 2em;
+}
+
+.carte iframe{
   height:300px;
-  width: 600px;
+  width: 1100px;
 }
 /* _______________________________*/
 /* ----------- DIV 5 ----------*/
