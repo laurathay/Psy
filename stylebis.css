@@ -112,3 +112,18 @@ text-align: right;
 #div4 h2{
   margin: 1em 12em;
 }
+
+#div4 img{
+  margin-left: 5em;
+  width: 85%;
+  z-index: 4;
+  position: static;
+}
+
+.carte iframe{
+  position: relative;
+  z-index: 5;
+  top: 5em;
+  height:318px;
+  width: 980px;
+}
