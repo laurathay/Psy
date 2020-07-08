@@ -28,6 +28,72 @@ h3{
   font-size: 1.5em;
   margin-top: 1em;
 }
+
 .inline img, h1, br, a, h3{
   display: inline-table;
+}
+
+/* -------------------- div1 ------------------------ */
+
+#div1 h2{
+  margin: 1em 12em;
+}
+
+.aligner-gauche{
+  width: 80%;
+  text-align: justify;
+  margin-left: 5em;
+}
+
+label {
+  display: inline-block;
+  position: relative;
+  margin: 25px;
+  padding:10px 100px 10px 100px;
+  border-radius: 30px;
+  color: #060606;
+  background-color: #e2e4e4;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color .2s, box-shadow .2s;
+}
+label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 21px;
+    bottom: 23px;
+    left: 15px;
+    width: 3px;
+    border-radius: 100px;
+    transition: background-color .2s;
+}
+label:hover, input:focus + label {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+.premier-bloc, .deuxieme-bloc{
+  width:40%;
+  text-align: justify;
+  display: inline-block;
+  margin-left: 5em;
+}
+
+ .deuxieme-bloc{
+margin-bottom: 2em;
+padding-bottom: 2em;
+text-align: right;
+}
+
+.deuxieme-bloc h4, p{
+  text-align: justify;
+}
+
+
+/* -------------------- div2 ------------------------ */
+
+
+#div2 h2{
+  margin: 1em 12em;
 }
