@@ -97,3 +97,7 @@ text-align: right;
 #div2 h2{
   margin: 1em 12em;
 }
+
+#div2 img{
+  margin-left: 1em;
+}
