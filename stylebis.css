@@ -127,3 +127,23 @@ text-align: right;
   height:318px;
   width: 980px;
 }
+
+/* -------------------- div5 ------------------------ */
+
+#div5 h2{
+  margin: 1em 13em;
+}
+
+#div5 a{
+  margin-left: 24em;
+}
+
+/* _______________________________*/
+/* ----------- FOOTER ----------*/
+/* _______________________________*/
+
+footer .contact,.horaire{
+  display: inline-block;
+  margin-left: 8em;
+
+}
