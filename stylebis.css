@@ -1,12 +1,55 @@
-html, body {height:100%;margin:0;}
- span {position:relative;margin-left:10em;width:100%;text-align:center;background:#fff;}
-a {display:inline-block;vertical-align:top;margin:0 30px;text-decoration:none;font:700 .95em/40px sans-serif;color:#262626;transition:all .4s ease;}
-a:hover {color:#09f;}
-#div1 {/*height:100%;*/background:#e8eff1;}
-#div2 {background:#ccc6c6;}
-#div3 {background:#fbdcd6;}
-#div4 {background:#e5c7b5;}
-#div5 {background:#bfd7c7;}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+span {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  padding: 1.5em;
+  opacity: 0.95;
+  z-index: 2;
+  top:0;
+}
+
+a {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 30px;
+  text-decoration: none;
+  font: 700 .95em/40px sans-serif;
+  color: #262626;
+  transition: all .4s ease;
+}
+
+a:hover {
+  color: #09f;
+}
+
+#div1 {
+  /*height:100%;*/
+  background: #e8eff1;
+}
+
+#div2 {
+  background: #ccc6c6;
+}
+
+#div3 {
+  background: #fbdcd6;
+}
+
+#div4 {
+  background: #e5c7b5;
+}
+
+#div5 {
+  background: #bfd7c7;
+}
+
+/* ------------------------------------------------ */
 
 @media only screen and (min-width:1200px) {
  span{
@@ -18,7 +61,9 @@ a:hover {color:#09f;}
 }
 
 *{
-  font-family: 'Amiri', serif;
+  /*font-family: 'Amiri', serif;*/
+  font-family: 'Roboto', sans-serif;
+
 
 }
 
@@ -59,17 +104,27 @@ h3{
 
 /* -------------------- div1 ------------------------ */
 
+
+#div1 {
+/*  margin: 1em 12em;*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 #div1 h2{
-  margin: 1em 12em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .aligner-gauche{
-  width: 80%;
+  width: 45%;
   text-align: justify;
-  margin-left: 5em;
+  /*margin-left: 5em;*/
+  margin: auto;
 }
 
-label {
+label{
   display: inline-block;
   position: relative;
   margin: 25px;
@@ -96,6 +151,7 @@ label::before {
 label:hover, input:focus + label {
   box-shadow: 0 0 20px rgba(0, 0, 0, .6);
 }
+
 
 .premier-bloc, .deuxieme-bloc{
   width:40%;
@@ -150,14 +206,19 @@ text-align: right;
 
 
 @media only screen and (min-width:1200px) {
-  .carte iframe{
-     margin-left: 5em; 
+  .carte > iframe{
     height:300px;
-    width: 1100px;
+    width: 100%;
   }
 }
 
+#div4 svg{
+  width: 5%;
+}
 
+.icon-tabler-bus{
+  margin-right: 2em;
+}
 .aligner-droite{
   margin-right: 7em;
   text-align: right;
