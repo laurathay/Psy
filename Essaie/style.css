@@ -17,6 +17,8 @@ position: relative;
 background: #eee;
     text-align: center;
     padding: 0 2em;
+}
+
 h1 {
     font-size: 2rem;
     margin: 0;
@@ -27,7 +29,7 @@ h3 {
     letter-spacing: 0.3rem;
     opacity: 0.6;
 }
-}
+
 
 .et-hero-tabs-container {
 display: flex;

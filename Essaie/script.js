@@ -1,13 +1,12 @@
 
 let open = document.querySelector('.navbar--icon');
 class StickyNavigation {
-	
 	constructor() {
 		this.currentId = null;
 		this.currentTab = null;
 		this.tabContainerHeight = 70;
 		let self = this;
-		$('.et-hero-tab').click(function() { 
+		document.querySelector('.et-hero-tabs').click(function() { 
 			self.onTabClick(event, $(this)); 
 		});
 		$(window).scroll(() => { this.onScroll(); });
@@ -22,7 +21,7 @@ class StickyNavigation {
 	
 	onScroll() {
 		this.checkTabContainerPosition();
-    this.findCurrentTabSelector();
+        this.findCurrentTabSelector();
 	}
 	
 	onResize() {
