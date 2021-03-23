@@ -1,6 +1,6 @@
 
 class StickyNavigation {
-    
+
 	constructor() {
 		this.currentId = null;
 		this.currentTab = null;
