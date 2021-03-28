@@ -74,3 +74,6 @@ class StickyNavigation {
 }
 
 new StickyNavigation();
+
+//pour la partie carroussel 
+

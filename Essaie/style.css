@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+:root {
+  --body-bg-color: #e5f4f9;
+  --body-color-light: #8b939c;
+  --body-font: "Roboto", sans-serif;
+  --page-bg-color: #f2f5f7;
+  --body-color: #3d4954;
+  --border-color: #b8bec3;
+  --placeholder: #ccd0d2;
+}
+
+
+
 body {
     font-family: "Century Gothic", 'Lato', sans-serif;
 }
@@ -300,84 +316,17 @@ body {
   }
 }
 
-/* essaie d'autres type de cards */
-*, ::before {
-    box-sizing: inherit;
-    margin: 0;
-    font: inherit;
-  }
+
+/* autre essaie */
+
+ul {
+  list-style: none;
+}
+
+.main{
+  height: 100vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
   
-  .essaie-cards html {
-    font: 100 1.25em/1.25 handlee, z003, segoe script, comic sans ms, cursive;
-  }
-  @media (max-width: 320px) {
-    .essaie-cards html {
-      font-size: 1em;
-    }
-  }
-  @media (max-width: 240px) {
-    .essaie-cards html {
-      font-size: 0.75em;
-    }
-  }
-  
-  .essaie-cards body {
-    box-sizing: border-box;
-    display: grid;
-    grid-gap: 1.25em;
-    grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
-    overflow-x: hidden;
-    min-height: 100vh;
-    padding: 0.5em;
-    background: linear-gradient(var(--ang, 185deg), #000 calc(50% - .5px), #fff calc(50% + .5px));
-  }
-  @media (min-width: 37.8125em) {
-    .essaie-cards body {
-      --ang: 85deg ;
-    }
-  }
-  
-  article {
-    --s0: calc(1.25em + 6px);
-    --s1: calc(1.25em + 6px + 0.5em);
-    --img: url("https://images.unsplash.com/photo-1614540428857-666e0ec545ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNTU3NDcxOQ&ixlib=rb-1.2.1&q=80&w=400");
-    place-self: center;
-    position: relative;
-    width: 14em;
-    height: 14em;
-    border: solid 0 transparent;
-    border-width: 0 var(--s0) var(--s0) 0;
-    padding: var(--s1) 0.5em 0.5em var(--s1);
-    --lyr:
-        var(--img) 50%/ cover border-box padding-box
-        #fff;
-    background: var(--lyr);
-    background-blend-mode: var(--mod);
-    isolation: isolate;
-  }
-  article:nth-child(2) {
-    --img: url("https://images.unsplash.com/photo-1614908416153-120ad4283f0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNTMwMDc3Ng&ixlib=rb-1.2.1&q=80&w=400");
-    --mod: difference;
-    filter: invert(1);
-  }
-  article::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 14em;
-    height: 14em;
-    border: solid 0 transparent;
-    border-width: 1.25em 0 0 1.25em;
-    padding: 6px;
-    background: linear-gradient(#000, #000) content-box, var(--lyr);
-    background-blend-mode: normal, var(--mod);
-    mix-blend-mode: difference;
-    pointer-events: none;
-    content: "";
-  }
-  
-  .essaie-cards h3 {
-    font-size: 1.75em;
-    font-weight: 900;
-    line-height: 1.75;
-  }
+}
+ 
