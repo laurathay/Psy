@@ -2,6 +2,8 @@
 
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
+@import "intro" ;
+
 :root {
   --body-bg-color: #e5f4f9;
   --body-color-light: #8b939c;
@@ -126,7 +128,17 @@ transition: left 0.3s ease;
         font-size: 1rem;
     }
 }
-
+/* grid page 1 */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr 0fr;
+  grid-template-rows: 0.5fr 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
+}
 
 
 /* Essaie cards */
@@ -323,10 +335,5 @@ ul {
   list-style: none;
 }
 
-.main{
-  height: 100vh;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  
-}
+
  
