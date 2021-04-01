@@ -40,10 +40,13 @@ $black: #282936;
 
 header, .plein-ecran {
   width: 100%;
+  overflow-x: hidden;
+
 }
 
 body {
     font-family: "Century Gothic", 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 a, a:visited, a:hover{
@@ -56,12 +59,12 @@ a, a:visited, a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75vh;
-    position: sticky;
+    /* height: 75vh; */
+    /* position: sticky; */
     background: #eee;
     text-align: center;
     padding: 0 21em;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .et-hero-tabs h1,
@@ -72,7 +75,10 @@ a, a:visited, a:hover{
   line-height: 1.15;
   font-weight: 300;
   line-height: 1.15;
-  transition: all 150ms ease-in-out; 
+  transition: all 150ms ease-in-out;
+  padding-top: 5em; 
+  padding-bottom: 5em; 
+
 }
 
 .et-hero-tabs h1:hover {

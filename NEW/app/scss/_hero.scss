@@ -1,0 +1,105 @@
+.hero {
+    background-color: $veryLightGray;
+
+    .container{
+        @include breakpoint-up(large){
+            display: flex;
+            align-items: center; //centrer le texte
+        }       
+    }
+
+
+    &__image {
+        position: relative;
+        background-image: url('../../images/bg-intro-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 17.5rem;
+
+        @include breakpoint-up(medium){
+            min-height: 25rem;
+            background-position: center 60%;
+        }
+
+        @include breakpoint-up(large){ //pour le responsive
+            flex: 3;
+            order: 2; //pour définir l'ordre des images
+            min-height: 41rem; //donne la grandeur de l'image
+            background-image: none;
+            // background-image: url('../../images/bg-intro-desktop.svg');
+            // background-position: left center;
+        }
+
+        &::before, &::after {
+            // border: 1px solid magenta;
+        }
+
+        &::before {
+            // border: 1px solid magenta;
+
+          
+            @include breakpoint-up(large){
+                content: ""; //à ne pas oublier pour donner une donnée
+                position: absolute;
+                width: 150%; //qui fera apparaitre l'image 
+                height: 100%;
+                position: absolute;
+                background-image: url('../../images/intro-desktop.svg');
+                background-size: 122%;
+                background-repeat: no-repeat;
+                background-position : center bottom;
+                background-position : 0% 83%;
+            }
+
+            @include breakpoint-up(large){
+                width: 150%;
+                background-size: 122%;
+                background-repeat: no-repeat;
+                background-position: 0% 83%;
+            }
+        }
+
+        &::after {
+            content: ""; //à ne pas oublier pour donner une donnée
+            position: absolute;
+            width: 100%; //qui fera apparaitre l'image 
+            height: 100%;
+            position: absolute;
+            background-image: url('../../images/image-mockups.png');
+            background-size: 93%;
+            background-repeat: no-repeat;
+            background-position : center bottom;
+
+            @include breakpoint-up(medium){
+                background-size: 52%;
+            }
+
+            @include breakpoint-up(large){
+                width: 120%;
+                height: 122%;
+                background-size: 94%;
+                background-repeat: no-repeat;
+                background-position: center 150%;
+                left: 22%;
+            }
+        }
+
+    }
+
+    &__text {
+        text-align: center;
+
+        @include breakpoint-up(large){ //pour le responsive
+            flex: 2;
+            order: 1;
+            text-align: left;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 2.25rem;
+        }
+
+    }
+}
