@@ -1,0 +1,81 @@
+.has-faded {// revoir l'animation
+    visibility: hidden;
+}
+
+@keyframes fade-in {
+
+    from{ //display doesnt work in animation so use visibility
+        visibility: hidden;
+        opacity: 0;
+
+    }
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+}
+
+.fade-in {
+    animation: fade-in 200ms ease-in-out forwards; //forwards will keep the style after the animation is finished
+}
+
+@keyframes fade-out {
+
+    from{ //display doesnt work in animation
+        visibility: visible;
+        opacity: 1;
+
+    }
+    99%{
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
+}
+
+.fade-out {
+    animation: fade-out 200ms ease-in-out forwards; //forwards will keep the style after the animation is finished
+}
+
+.spin {
+    color:$limeGreen;
+  }
+  .spin:after {
+    content:"";
+    animation: spin 10s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+         content:"vous conseille"; 
+        }
+    30% {
+         content:"vous écoute"; 
+        }
+    50% {
+         content: "analyse"; 
+        }
+    60% {
+         content: "vous soutient"; 
+        }
+    70% {
+         content: "Hic"; 
+        }
+    80% {
+         content: "atque"; 
+        }
+    90% {
+         content: "fuga"; 
+        }
+  }
