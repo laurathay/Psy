@@ -1,0 +1,87 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
+}
+
+.font2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.color {
+  color: #b0cdc1;
+}
+
+.has-faded {
+  visibility: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 200ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 200ms ease-in-out forwards;
+}
+
+/* ----------------------------------- */
+@keyframes spin {
+  0% {
+    content: "vous conseille";
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    content: "vous écoute";
+  }
+}
+.spin {
+  color: #b0cdc1;
+}
+
+.spin::after {
+  content: "";
+  animation: spin 10s linear infinite;
+}
+
+/*# sourceMappingURL=style.css.map */

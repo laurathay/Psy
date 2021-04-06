@@ -1,0 +1,85 @@
+.has-faded {// revoir l'animation
+    visibility: hidden;
+}
+
+@keyframes fade-in {
+
+    from{ //display doesnt work in animation so use visibility
+        visibility: hidden;
+        opacity: 0;
+
+    }
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+}
+
+.fade-in {
+    animation: fade-in 200ms ease-in-out forwards; //forwards will keep the style after the animation is finished
+}
+
+@keyframes fade-out {
+
+    from{ //display doesnt work in animation
+        visibility: visible;
+        opacity: 1;
+
+    }
+    99%{
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
+}
+
+.fade-out {
+    animation: fade-out 200ms ease-in-out forwards; //forwards will keep the style after the animation is finished
+}
+
+/* ----------------------------------- */
+@keyframes spin {
+    0% {
+      content: "vous conseille";
+    }
+    50% {
+      color: white;
+    }
+    100% {
+      content: "vous écoute";
+    }
+  }
+
+// @keyframes spin {
+
+//     0%  { 
+//         content:'vous conseille'; 
+//     } 20% {
+//         content:'vous écoute';
+//     } 50% { 
+//         content:'analyse'; 
+//     } 100%  { 
+//         content:'vous soutient'; 
+//     }
+// }
+
+.spin {
+    color:#b0cdc1;
+}
+
+.spin::after {
+    content:"";
+    animation: spin 10s linear infinite;
+}
