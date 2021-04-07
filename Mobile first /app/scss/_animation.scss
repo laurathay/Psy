@@ -54,14 +54,8 @@
     0% {
       content: "vous conseille";
     }
-    25% {
-      color: white;
-    }
     50% {
         content: "vous soutient";
-      }
-    75% {
-        color: white;
       }
     100% {
       content: "vous écoute";
@@ -74,5 +68,5 @@
 
 .spin::after {
     content:"";
-    animation: spin 500ms linear infinite;
+    animation: spin 5s linear infinite;
 }
