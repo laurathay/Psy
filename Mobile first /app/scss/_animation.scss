@@ -54,26 +54,19 @@
     0% {
       content: "vous conseille";
     }
-    50% {
+    25% {
       color: white;
     }
+    50% {
+        content: "vous soutient";
+      }
+    75% {
+        color: white;
+      }
     100% {
       content: "vous écoute";
     }
   }
-
-// @keyframes spin {
-
-//     0%  { 
-//         content:'vous conseille'; 
-//     } 20% {
-//         content:'vous écoute';
-//     } 50% { 
-//         content:'analyse'; 
-//     } 100%  { 
-//         content:'vous soutient'; 
-//     }
-// }
 
 .spin {
     color:#b0cdc1;
@@ -81,5 +74,5 @@
 
 .spin::after {
     content:"";
-    animation: spin 10s linear infinite;
+    animation: spin 500ms linear infinite;
 }
